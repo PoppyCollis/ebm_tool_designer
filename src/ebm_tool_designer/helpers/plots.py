@@ -63,7 +63,6 @@ def visualise_tools(designs, target_location=None, energies=None):
     # Hide unused axes
     for j in range(i + 1, len(axes)):
         axes[j].axis('off')
-    plt.tight_layout()
     plt.show()
     
     

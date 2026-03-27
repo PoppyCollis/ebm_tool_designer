@@ -16,7 +16,7 @@ def main():
     
     # initailise EBM
     device = EBMConfig.DEVICE
-    print(device)
+    print(f"Device: {device}")
     prior = ToolDesignPrior(ToolDatasetConfig.L1_BOUNDS, ToolDatasetConfig.L2_BOUNDS, ToolDatasetConfig.THETA_BOUNDS, ToolDatasetConfig.DEVICE)
     ebm = EnergyBasedModel(prior, weights_path=RewardModelConfig.WEIGHTS_SAVE_PATH)
     
