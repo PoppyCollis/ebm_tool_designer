@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ebm_tool_designer"
+version = "0.1.0"
+description = "Task-conditioned tool design using energy-based models"
+dependencies = [
+    "numpy", 
+    "matplotlib",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
