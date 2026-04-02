@@ -81,7 +81,6 @@ class ToolDataset:
         # gets the relevant histogram bin for each end-effector position
         xi = np.digitize(ee_x, self.x_edges) - 1
         yi = np.digitize(ee_y, self.y_edges) - 1
-
         
         n_x, n_y = self.density_2d.shape
         # makes sure to only calculate acceptance probability for points that fall within the histogram bounds
@@ -243,7 +242,7 @@ def main():
     df = pd.DataFrame(data)
     
     # UNCOMMENT TO SAVE DATASET
-    #df.to_parquet(save_file)
+    df.to_parquet(save_file)
         
     # visualise_tools(data)
     

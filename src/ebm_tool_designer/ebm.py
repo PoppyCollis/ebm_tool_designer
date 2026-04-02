@@ -93,7 +93,7 @@ class EnergyBasedModel:
             
             sigmoid_phi = torch.sigmoid(phi)
             log_det_jacobian = torch.log((self.prior.bounds_high - self.prior.bounds_low) * sigmoid_phi * (1 - sigmoid_phi) + 1e-8).sum()
-            energy = EBMConfig.E_SCALING_FACTOR * self.joint_energy(tau_current, c_target, r_target) - log_det_jacobian
+            energy = EBMConfig.E_SCALING_FACTOR * self.joint_energy(tau_current, c_target, r_target) - log_det_jacobian # EBMConfig.E_SCALING_FACTOR probably unprincipled not needed
             
             # Check the magnitude of the two forces
             if i ==0:
