@@ -33,12 +33,21 @@ Requires Python 3.8+ and PyTorch.
 # Clone the repository
 git clone <repo-url>
 cd ebm_tool_designer
+```
+We recommend setting up a python virtual environment or conda env in order to install dependencies:
 
-# Install in editable mode
+```bash
+# Create virtual environment
+python3 -m venv .venv
+source .venv/bin/activate
+```
+
+```bash
+# Install the ebm_tool_designer package in editable mode
 pip install -e .
 ```
 
-Additional dependencies not listed in `pyproject.toml` but required at runtime:
+Install additional dependencies not listed in `pyproject.toml` but required at runtime:
 
 ```bash
 pip install torch pandas scikit-learn scipy tqdm pyarrow fastparquet
