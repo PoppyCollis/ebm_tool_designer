@@ -3,3 +3,9 @@ pandas==2.3.1
 scikit-learn==1.7.0
 scipy==1.15.3
 tqdm==4.67.1
+pyarrow==23.0.1
+fastparquet==2026.3.0
+numpy==2.2.6
+matplotlib==3.10.8
+
+

@@ -47,6 +47,10 @@ coverage.xml
 *.pyo
 .pytest_cache/
 
+# --- Session Memory ---
+memory.md
+plan.md
+
 # --- IDEs ---
 .vscode/
 .idea/
@@ -64,3 +68,5 @@ Thumbs.db
 # *.log
 # *.csv
 # *.pdf
+
+

@@ -32,7 +32,7 @@ Requires Python 3.8+ and PyTorch.
 ```bash
 # Clone the repository
 git clone <repo-url>
-cd EBM_tool_design
+cd ebm_tool_designer
 
 # Install in editable mode
 pip install -e .
@@ -41,7 +41,7 @@ pip install -e .
 Additional dependencies not listed in `pyproject.toml` but required at runtime:
 
 ```bash
-pip install torch pandas scikit-learn scipy tqdm
+pip install torch pandas scikit-learn scipy tqdm pyarrow fastparquet
 ```
 
 ## Project Structure
